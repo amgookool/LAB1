@@ -2,7 +2,7 @@
 
 ## (a) Coding Standards
 
-The BARR C embedded C coding standard was used to standardized the development code. This standard was developed to minimize bugs in firmware by focusing on practical rules that keep bugs out while also improving the maintability and portablity of embedded software.
+The BARR C embedded C coding standard was used to standardized the development code. This standard was developed to minimize bugs in firmware by focusing on practical rules that keep bugs out while also improving the maintability and portablity of embedded software. This standard will guide the creation of header files and c file to create a module to interface with the ADS1115. This allows the reusability of the ADS1115 code in another project. This standard will guide the project's variable rules, statement rules, procedure rules, data type rules, comment rules and general rules for a complex embedded system. 
 
 ## (b) Toolchain Features
 
