@@ -1,0 +1,36 @@
+ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 7536, room 16
+tail 0
+chksum 0x81
+load 0x3ffe8408, len 24, room 8
+tail 0
+chksum 0x38
+load 0x3ffe8420, len 3468, room 8
+tail 4
+chksum 0x5f
+csum 0x5f
+I (43) boot: ESP-IDF v3.4-71-g7085cc76 2nd stage bootloader
+I (43) boot: compile time 08:37:14
+I (43) boot: SPI Speed      : 40MHz
+I (50) boot: SPI Mode       : DIO
+I (56) boot: SPI Flash Size : 1MB
+I (62) boot: Partition Table:
+I (67) boot: ## Label            Usage          Type ST Offset   Length
+I (79) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (90) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (102) boot:  2 factory          factory app      00 00 00010000 000f0000
+I (113) boot: End of partition table
+I (120) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x1ccb4 (117940) map
+I (182) esp_image: segment 1: paddr=0x0002cccc vaddr=0x4022ccc4 size=0x071b4 ( 29108) map
+I (195) esp_image: segment 2: paddr=0x00033e88 vaddr=0x3ffe8000 size=0x00544 (  1348) load
+I (196) esp_image: segment 3: paddr=0x000343d4 vaddr=0x40100000 size=0x00080 (   128) load
+I (208) esp_image: segment 4: paddr=0x0003445c vaddr=0x40100080 size=0x050c0 ( 20672) load
+I (229) boot: Loaded app from partition at offset 0x10000
+Name: Adrian Gookool
+ID Number: 816008385
+This is ESP8266 chip with 1 CPU cores, WiFi, silicon revision 1, 1MB external flash
+Restarting in 0 second(s)...
+Restarting now.
+
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)

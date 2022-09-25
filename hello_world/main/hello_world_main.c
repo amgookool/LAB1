@@ -6,8 +6,7 @@
 
 void app_main()
 {
-    printf("Name: Adrian Gookool\n");
-    printf("ID Number: 816008385\n");
+    printf("Name: Adrian Gookool\nID Number: 816008385\n");
 
     /* Print chip information */
     esp_chip_info_t chip_info;

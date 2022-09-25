@@ -7,26 +7,26 @@
 #include "freertos/queue.h"
 
 #include "driver/gpio.h"
-
 #include "esp_log.h"
 #include "esp_system.h"
 
 static const char *TAG = "main";
 
-#define GPIO_OUTPUT_IO 2
-#define GPIO_INPUT_IO 0
+#define GPIO_OUTPUT_IO 2        // LED
+#define GPIO_INPUT_IO 0         // Button 
 
+// Queue Handler
 static xQueueHandle gpio_evt_queue = NULL;
 
 static void gpio_isr_handler(void *arg)
 {
-    uint32_t gpio_num = (uint32_t)arg;
-    xQueueSendFromISR(gpio_evt_queue, &gpio_num, NULL);
+    uint32_t gpio_num = (uint32_t)arg; // gpio num for input pin
+    xQueueSendFromISR(gpio_evt_queue, &gpio_num, NULL); // Put ISR event in queue for input pin
 }
 
 static void gpio_led_task(void *arg)
 {
-    uint32_t io_num;
+    uint32_t io_num;    // pin number
 
     for (;;)
     {
@@ -38,19 +38,20 @@ static void gpio_led_task(void *arg)
                 ESP_LOGI(TAG, "Turning the LED on...\n");
                 gpio_set_level(GPIO_OUTPUT_IO, 1);
             }
-            else if (gpio_get_level(io_num) == 1)
+            else
             {
                 ESP_LOGI(TAG, "Turning the LED off...\n");
                 gpio_set_level(GPIO_OUTPUT_IO, 0);
             }
-            vTaskDelay(1000 / portTICK_PERIOD_MS);
+            vTaskDelay(1500 / portTICK_PERIOD_MS);
         }
     }
 }
 
 void app_main(void)
 {
-    gpio_config_t io_conf;
+    gpio_config_t io_conf; // struct for configuring gpio pins
+
     // OUTPUT IO Configuration
     io_conf.intr_type = GPIO_INTR_DISABLE;           // disable interrupt
     io_conf.mode = GPIO_MODE_OUTPUT;                 // set as output mode
@@ -66,11 +67,12 @@ void app_main(void)
     io_conf.pull_up_en = 0;                         // disable pull-up mode
     gpio_config(&io_conf);
 
-    // change gpio intrrupt type for one pin
+    // change gpio intrrupt type for input pin on falling edge
     gpio_set_intr_type(GPIO_INPUT_IO, GPIO_INTR_NEGEDGE);
 
     // create a queue to handle gpio event from isr
     gpio_evt_queue = xQueueCreate(10, sizeof(uint32_t));
+    
     // start gpio task
     xTaskCreate(gpio_led_task, "gpio_led_task", 2048, NULL, 10, NULL);
 
@@ -84,12 +86,10 @@ void app_main(void)
     // hook isr handler for specific gpio pin again
     gpio_isr_handler_add(GPIO_INPUT_IO, gpio_isr_handler, (void *)GPIO_INPUT_IO);
 
-    int cnt = 0;
 
     while (1)
     {
-        ESP_LOGI(TAG, "cnt: %d\n", cnt++);
-        vTaskDelay(1000 / portTICK_RATE_MS);
         gpio_set_level(GPIO_OUTPUT_IO, 0);
+        vTaskDelay(1000 / portTICK_RATE_MS);
     }
 }
