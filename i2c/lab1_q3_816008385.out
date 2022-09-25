@@ -1,0 +1,54 @@
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)
+
+load 0x40100000, len 7536, room 16
+tail 0
+chksum 0x81
+load 0x3ffe8408, len 24, room 8
+tail 0
+chksum 0x38
+load 0x3ffe8420, len 3468, room 8
+tail 4
+chksum 0x58
+csum 0x58
+I (43) boot: ESP-IDF v3.4-71-g7085cc76 2nd stage bootloader
+I (43) boot: compile time 21:58:55
+I (43) boot: SPI Speed      : 40MHz
+I (50) boot: SPI Mode       : DIO
+I (56) boot: SPI Flash Size : 1MB
+I (62) boot: Partition Table:
+I (67) boot: ## Label            Usage          Type ST Offset   Length
+I (79) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (90) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (102) boot:  2 factory          factory app      00 00 00010000 000f0000
+I (113) boot: End of partition table
+I (120) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x17144 ( 94532) map
+I (173) esp_image: segment 1: paddr=0x0002715c vaddr=0x40227154 size=0x05d24 ( 23844) map
+I (183) esp_image: segment 2: paddr=0x0002ce88 vaddr=0x3ffe8000 size=0x003dc (   988) load
+I (184) esp_image: segment 3: paddr=0x0002d26c vaddr=0x40100000 size=0x00080 (   128) load
+I (198) esp_image: segment 4: paddr=0x0002d2f4 vaddr=0x40100080 size=0x04558 ( 17752) load
+I (218) boot: Loaded app from partition at offset 0x10000
+I (433) gpio: GPIO[0]| InputEn: 0| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0
+I (436) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0
+I (448) main: Byte:0: 254
+I (452) main: Byte:1: 254
+I (457) main: Successfully read ADS1115...
+
+I (465) main: Sensor Data: 1073658224
+I (5963) main: Byte:0: 0
+I (5964) main: Byte:1: 0
+I (5965) main: Successfully read ADS1115...
+
+I (5966) main: Sensor Data: 1073658224
+I (11464) main: Byte:0: 0
+I (11465) main: Byte:1: 0
+I (11466) main: Successfully read ADS1115...
+
+I (11467) main: Sensor Data: 1073658224
+I (16964) main: Byte:0: 0
+I (16965) main: Byte:1: 0
+I (16966) main: Successfully read ADS1115...
+
+I (16967) main: Sensor Data: 1073658224
+I (22465) main: Byte:0: 0
+I (22466) main: Byte:1: 0
+I (22467) main: Successfully read ADS1115...
