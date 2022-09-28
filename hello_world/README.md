@@ -1,5 +1,5 @@
 # Hello World Example
+This project uses the hello_world example from the ESP8266 SDk.
+The "hello world" message was replaced with my name and my ID number. 
 
-Starts a FreeRTOS task to print "Hello World"
-
-See the README.md file in the upper level 'examples' directory for more information about examples.
+85 modulo 17 = 0

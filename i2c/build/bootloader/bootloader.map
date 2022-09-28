@@ -790,7 +790,7 @@ END GROUP
  *(.jcr)
                 0x000000003ffe8420                _data_end = ABSOLUTE (.)
 
-.rodata         0x000000003ffe8420      0xd8c
+.rodata         0x000000003ffe8420      0xd90
                 0x000000003ffe8420                _rodata_start = ABSOLUTE (.)
  *(.rodata)
  *(.rodata.*)
@@ -803,102 +803,102 @@ END GROUP
  .rodata.print_flash_info
                 0x000000003ffe84cc       0x28 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
  .rodata.bootloader_main.str1.4
-                0x000000003ffe84f4       0x9e /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- *fill*         0x000000003ffe8592        0x2 
+                0x000000003ffe84f4       0xa2 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ *fill*         0x000000003ffe8596        0x2 
  .rodata.log_invalid_app_partition.str1.4
-                0x000000003ffe8594       0x68 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x000000003ffe8598       0x68 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                          0x70 (size before relaxing)
  .rodata.try_load_partition.str1.4
-                0x000000003ffe85fc       0x29 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- *fill*         0x000000003ffe8625        0x3 
+                0x000000003ffe8600       0x29 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ *fill*         0x000000003ffe8629        0x3 
  .rodata.bootloader_utility_load_partition_table.str1.4
-                0x000000003ffe8628      0x137 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- *fill*         0x000000003ffe875f        0x1 
+                0x000000003ffe862c      0x137 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ *fill*         0x000000003ffe8763        0x1 
  .rodata.bootloader_utility_get_selected_boot_partition.str1.4
-                0x000000003ffe8760       0xef /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- *fill*         0x000000003ffe884f        0x1 
+                0x000000003ffe8764       0xef /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ *fill*         0x000000003ffe8853        0x1 
  .rodata.bootloader_utility_load_boot_image.str1.4
-                0x000000003ffe8850       0x9a /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- *fill*         0x000000003ffe88ea        0x2 
+                0x000000003ffe8854       0x9a /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ *fill*         0x000000003ffe88ee        0x2 
  .rodata.bootloader_mmap.str1.4
-                0x000000003ffe88ec       0x57 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x000000003ffe8943        0x1 
+                0x000000003ffe88f0       0x57 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x000000003ffe8947        0x1 
  .rodata.bootloader_flash_read.str1.4
-                0x000000003ffe8944       0x9f /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x000000003ffe89e3        0x1 
+                0x000000003ffe8948       0x9f /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x000000003ffe89e7        0x1 
  .rodata.bootloader_execute_flash_command.str1.4
-                0x000000003ffe89e4       0x19 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x000000003ffe89fd        0x3 
+                0x000000003ffe89e8       0x19 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x000000003ffe8a01        0x3 
  .rodata.bootloader_flash_read_sfdp.str1.4
-                0x000000003ffe8a00       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x000000003ffe8a04       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
  .rodata.bootloader_flash_xmc_startup.str1.4
-                0x000000003ffe8a14       0x2f /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x000000003ffe8a43        0x1 
+                0x000000003ffe8a18       0x2f /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x000000003ffe8a47        0x1 
  .rodata.esp_partition_table_basic_verify.str1.4
-                0x000000003ffe8a44       0xb4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                0x000000003ffe8a48       0xb4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
  .rodata.verify_image_header.str1.4
-                0x000000003ffe8af8       0x82 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- *fill*         0x000000003ffe8b7a        0x2 
+                0x000000003ffe8afc       0x82 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ *fill*         0x000000003ffe8b7e        0x2 
  .rodata.process_segment_data.str1.4
-                0x000000003ffe8b7c       0x27 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- *fill*         0x000000003ffe8ba3        0x1 
+                0x000000003ffe8b80       0x27 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ *fill*         0x000000003ffe8ba7        0x1 
  .rodata.verify_checksum.str1.4
-                0x000000003ffe8ba4       0x57 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- *fill*         0x000000003ffe8bfb        0x1 
+                0x000000003ffe8ba8       0x57 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ *fill*         0x000000003ffe8bff        0x1 
  .rodata.process_segment.str1.4
-                0x000000003ffe8bfc       0x8f /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x000000003ffe8c00       0x8f /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x93 (size before relaxing)
- *fill*         0x000000003ffe8c8b        0x1 
+ *fill*         0x000000003ffe8c8f        0x1 
  .rodata.esp_image_load.str1.4
-                0x000000003ffe8c8c       0xaf /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- *fill*         0x000000003ffe8d3b        0x1 
+                0x000000003ffe8c90       0xaf /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ *fill*         0x000000003ffe8d3f        0x1 
  .rodata.esp_spi_flash_init.str1.4
-                0x000000003ffe8d3c       0x29 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- *fill*         0x000000003ffe8d65        0x3 
+                0x000000003ffe8d40       0x29 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ *fill*         0x000000003ffe8d69        0x3 
  .rodata.str1.4
-                0x000000003ffe8d68       0x24 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/log/liblog.a(log.o)
+                0x000000003ffe8d6c       0x24 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/log/liblog.a(log.o)
                                          0x22 (size before relaxing)
  .rodata.s_log_prefix
-                0x000000003ffe8d8c        0x6 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/log/liblog.a(log.o)
- *fill*         0x000000003ffe8d92        0x2 
+                0x000000003ffe8d90        0x6 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/log/liblog.a(log.o)
+ *fill*         0x000000003ffe8d96        0x2 
  .rodata.s_log_color
-                0x000000003ffe8d94       0x18 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/log/liblog.a(log.o)
+                0x000000003ffe8d98       0x18 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/log/liblog.a(log.o)
  .rodata.crc32_le_table
-                0x000000003ffe8dac      0x400 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/esp8266/libesp8266.a(crc.o)
+                0x000000003ffe8db0      0x400 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/bootloader/esp8266/libesp8266.a(crc.o)
  *(.gnu.linkonce.r.*)
  *(.rodata1)
-                0x000000003ffe91ac                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
+                0x000000003ffe91b0                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
  *(.xt_except_table)
  *(.gcc_except_table)
  *(.gnu.linkonce.e.*)
  *(.gnu.version_r)
  *(.eh_frame)
-                0x000000003ffe91ac                . = ((. + 0x3) & 0xfffffffffffffffc)
-                0x000000003ffe91ac                __init_array_start = ABSOLUTE (.)
+                0x000000003ffe91b0                . = ((. + 0x3) & 0xfffffffffffffffc)
+                0x000000003ffe91b0                __init_array_start = ABSOLUTE (.)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
-                0x000000003ffe91ac                __init_array_end = ABSOLUTE (.)
+                0x000000003ffe91b0                __init_array_end = ABSOLUTE (.)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x000000003ffe91ac                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
+                0x000000003ffe91b0                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
  *(.xt_except_desc)
  *(.gnu.linkonce.h.*)
-                0x000000003ffe91ac                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
+                0x000000003ffe91b0                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
  *(.xt_except_desc_end)
  *(.dynamic)
  *(.gnu.version_d)
-                0x000000003ffe91ac                _rodata_end = ABSOLUTE (.)
-                0x000000003ffe91ac                _lit4_start = ABSOLUTE (.)
+                0x000000003ffe91b0                _rodata_end = ABSOLUTE (.)
+                0x000000003ffe91b0                _lit4_start = ABSOLUTE (.)
  *(*.lit4)
  *(.lit4.*)
  *(.gnu.linkonce.lit4.*)
-                0x000000003ffe91ac                _lit4_end = ABSOLUTE (.)
-                0x000000003ffe91ac                . = ALIGN (0x4)
-                0x000000003ffe91ac                _heap_start = ABSOLUTE (.)
+                0x000000003ffe91b0                _lit4_end = ABSOLUTE (.)
+                0x000000003ffe91b0                . = ALIGN (0x4)
+                0x000000003ffe91b0                _heap_start = ABSOLUTE (.)
                 0x0000000060001100                PROVIDE (rtc_sys_info = 0x60001100)
                 0x00000000400040c0                PROVIDE (SPI_sector_erase = 0x400040c0)
                 0x0000000040004174                PROVIDE (SPI_page_program = 0x40004174)
