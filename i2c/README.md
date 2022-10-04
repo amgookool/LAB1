@@ -13,5 +13,6 @@
 * Connection:
     * connect sda/scl of sensor with GPIO0/GPIO2
     * no need to add external pull-up resistors, driver will enable internal pull-up resistors.
+    * A potentiometer is connected to A0 on the ADS1115. This is the voltage we are reading from the ESP8266.
 
 

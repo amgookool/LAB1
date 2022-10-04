@@ -19197,72 +19197,72 @@ END GROUP
  *libcore.a:(.bss .bss.* COMMON)
  .bss.s_cpu_speed_up_nest
                 0x00000000401045d8        0x2 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(user_interface.o)
- *libfreertos.a:freertos_hooks.*(.bss .bss.* COMMON)
- *libfreertos.a:list.*(.bss .bss.* COMMON)
- *libfreertos.a:stream_buffer.*(.bss .bss.* COMMON)
- *libfreertos.a:tasks.*(.bss .bss.* COMMON)
- *fill*         0x00000000401045da        0x2 
- .bss.uxSchedulerSuspended
-                0x00000000401045dc        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.xIdleTaskHandle
-                0x00000000401045e0        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.xNextTaskUnblockTime
-                0x00000000401045e4        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.uxTaskNumber
-                0x00000000401045e8        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.xNumOfOverflows
-                0x00000000401045ec        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.xYieldPending
-                0x00000000401045f0        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.uxPendedTicks
-                0x00000000401045f4        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.xSchedulerRunning
-                0x00000000401045f8        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.uxTopReadyPriority
-                0x00000000401045fc        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.xTickCount
-                0x0000000040104600        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.uxCurrentNumberOfTasks
-                0x0000000040104604        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.xSuspendedTaskList
-                0x0000000040104608       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.uxDeletedTasksWaitingCleanUp
-                0x000000004010461c        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.xTasksWaitingTermination
-                0x0000000040104620       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.xPendingReadyList
-                0x0000000040104634       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.pxOverflowDelayedTaskList
-                0x0000000040104648        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.pxDelayedTaskList
-                0x000000004010464c        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.xDelayedTaskList2
-                0x0000000040104650       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.xDelayedTaskList1
-                0x0000000040104664       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.pxReadyTasksLists
-                0x0000000040104678      0x12c /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
- .bss.pxCurrentTCB
-                0x00000000401047a4        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
-                0x00000000401047a4                pxCurrentTCB
- *libfreertos.a:impure.*(.bss .bss.* COMMON)
- *libfreertos.a:timers.*(.bss .bss.* COMMON)
- .bss.xLastTime$4351
-                0x00000000401047a8        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
- .bss.xTimerTaskHandle
-                0x00000000401047ac        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
- .bss.xTimerQueue
-                0x00000000401047b0        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
- .bss.pxOverflowTimerList
-                0x00000000401047b4        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
- .bss.pxCurrentTimerList
-                0x00000000401047b8        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
- .bss.xActiveTimerList2
-                0x00000000401047bc       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
- .bss.xActiveTimerList1
-                0x00000000401047d0       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
- *libfreertos.a:event_groups.*(.bss .bss.* COMMON)
  *libfreertos.a:queue.*(.bss .bss.* COMMON)
+ *libfreertos.a:event_groups.*(.bss .bss.* COMMON)
+ *libfreertos.a:list.*(.bss .bss.* COMMON)
+ *libfreertos.a:freertos_hooks.*(.bss .bss.* COMMON)
+ *libfreertos.a:impure.*(.bss .bss.* COMMON)
+ *libfreertos.a:stream_buffer.*(.bss .bss.* COMMON)
+ *libfreertos.a:timers.*(.bss .bss.* COMMON)
+ *fill*         0x00000000401045da        0x2 
+ .bss.xLastTime$4351
+                0x00000000401045dc        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
+ .bss.xTimerTaskHandle
+                0x00000000401045e0        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
+ .bss.xTimerQueue
+                0x00000000401045e4        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
+ .bss.pxOverflowTimerList
+                0x00000000401045e8        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
+ .bss.pxCurrentTimerList
+                0x00000000401045ec        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
+ .bss.xActiveTimerList2
+                0x00000000401045f0       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
+ .bss.xActiveTimerList1
+                0x0000000040104604       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(timers.o)
+ *libfreertos.a:tasks.*(.bss .bss.* COMMON)
+ .bss.uxSchedulerSuspended
+                0x0000000040104618        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.xIdleTaskHandle
+                0x000000004010461c        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.xNextTaskUnblockTime
+                0x0000000040104620        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxTaskNumber
+                0x0000000040104624        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.xNumOfOverflows
+                0x0000000040104628        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.xYieldPending
+                0x000000004010462c        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxPendedTicks
+                0x0000000040104630        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.xSchedulerRunning
+                0x0000000040104634        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxTopReadyPriority
+                0x0000000040104638        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.xTickCount
+                0x000000004010463c        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxCurrentNumberOfTasks
+                0x0000000040104640        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.xSuspendedTaskList
+                0x0000000040104644       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxDeletedTasksWaitingCleanUp
+                0x0000000040104658        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.xTasksWaitingTermination
+                0x000000004010465c       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.xPendingReadyList
+                0x0000000040104670       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.pxOverflowDelayedTaskList
+                0x0000000040104684        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.pxDelayedTaskList
+                0x0000000040104688        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.xDelayedTaskList2
+                0x000000004010468c       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.xDelayedTaskList1
+                0x00000000401046a0       0x14 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.pxReadyTasksLists
+                0x00000000401046b4      0x12c /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+ .bss.pxCurrentTCB
+                0x00000000401047e0        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/freertos/libfreertos.a(tasks.o)
+                0x00000000401047e0                pxCurrentTCB
  *liblwip.a:(.bss .bss.* COMMON)
                 0x00000000401047e4                . = ALIGN (0x4)
                 0x00000000401047e4                _iram_bss_end = ABSOLUTE (.)
@@ -19360,7 +19360,7 @@ END GROUP
 .dram0.bss      0x000000003ffe83e0      0xf60
                 0x000000003ffe83e0                . = ALIGN (0x8)
                 0x000000003ffe83e0                _bss_start = ABSOLUTE (.)
- *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:freertos_hooks.* *libfreertos.a:list.* *libfreertos.a:stream_buffer.* *libfreertos.a:tasks.* *libfreertos.a:impure.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:queue.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:freertos_hooks.* *libfreertos.a:list.* *libfreertos.a:stream_buffer.* *libfreertos.a:tasks.* *libfreertos.a:impure.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:queue.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:freertos_hooks.* *libfreertos.a:list.* *libfreertos.a:stream_buffer.* *libfreertos.a:tasks.* *libfreertos.a:impure.* *libfreertos.a:timers.* *libfreertos.a:event_groups.* *libfreertos.a:queue.* *libcore.a) COMMON)
+ *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:queue.* *libfreertos.a:event_groups.* *libfreertos.a:list.* *libfreertos.a:freertos_hooks.* *libfreertos.a:impure.* *libfreertos.a:stream_buffer.* *libfreertos.a:timers.* *libfreertos.a:tasks.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:queue.* *libfreertos.a:event_groups.* *libfreertos.a:list.* *libfreertos.a:freertos_hooks.* *libfreertos.a:impure.* *libfreertos.a:stream_buffer.* *libfreertos.a:timers.* *libfreertos.a:tasks.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:queue.* *libfreertos.a:event_groups.* *libfreertos.a:list.* *libfreertos.a:freertos_hooks.* *libfreertos.a:impure.* *libfreertos.a:stream_buffer.* *libfreertos.a:timers.* *libfreertos.a:tasks.* *libcore.a) COMMON)
  .bss.s_reset_reason
                 0x000000003ffe83e0        0x4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(reset_reason.o)
  .bss.s_nmi_wd_state
@@ -25923,7 +25923,7 @@ OUTPUT(/home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/i2c.elf elf32-xte
  .debug_ranges  0x0000000000004868       0x48 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/pthread/libpthread.a(pthread_cond_var.o)
  .debug_ranges  0x00000000000048b0       0x98 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(_moddi3.o)
 
-.debug_line     0x0000000000000000    0x64e60
+.debug_line     0x0000000000000000    0x64e21
  .debug_line    0x0000000000000000      0x3b7 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/app_update/libapp_update.a(esp_app_desc.o)
  .debug_line    0x00000000000003b7     0x17fe /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(system_api.o)
  .debug_line    0x0000000000001bb5      0xb33 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(startup.o)
@@ -25945,101 +25945,101 @@ OUTPUT(/home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/i2c.elf elf32-xte
  .debug_line    0x00000000000104f8     0x14ac /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/heap/libheap.a(esp_heap_caps.o)
  .debug_line    0x00000000000119a4      0x31f /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/heap/libheap.a(esp_heap_init.o)
  .debug_line    0x0000000000011cc3      0x949 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/log/liblog.a(log.o)
- .debug_line    0x000000000001260c      0xf72 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/main/libmain.a(main.o)
- .debug_line    0x000000000001357e      0x614 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/newlib/libnewlib.a(syscall.o)
- .debug_line    0x0000000000013b92      0x94c /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/newlib/libnewlib.a(reent_init.o)
- .debug_line    0x00000000000144de      0x45b /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/newlib/libnewlib.a(esp_malloc.o)
- .debug_line    0x0000000000014939      0x9bc /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/newlib/libnewlib.a(locks.o)
- .debug_line    0x00000000000152f5      0x4e5 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-asprintf.o)
- .debug_line    0x00000000000157da      0x2d5 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-assert.o)
- .debug_line    0x0000000000015aaf       0x79 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-environ.o)
- .debug_line    0x0000000000015b28      0x591 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fclose.o)
- .debug_line    0x00000000000160b9      0x90b /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fflush.o)
- .debug_line    0x00000000000169c4      0xbf2 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-findfp.o)
- .debug_line    0x00000000000175b6      0x4ed /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fopen.o)
- .debug_line    0x0000000000017aa3      0x347 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fprintf.o)
- .debug_line    0x0000000000017dea      0x303 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fseek.o)
- .debug_line    0x00000000000180ed      0xcf9 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fseeko.o)
- .debug_line    0x0000000000018de6      0x4ed /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fwalk.o)
- .debug_line    0x00000000000192d3      0x171 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-impure.o)
- .debug_line    0x0000000000019444      0x609 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-makebuf.o)
- .debug_line    0x0000000000019a4d     0x10d0 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-nano-svfprintf.o)
- .debug_line    0x000000000001ab1d      0xf21 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
- .debug_line    0x000000000001ba3e      0xd7d /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_line    0x000000000001c7bb      0x396 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-putchar.o)
- .debug_line    0x000000000001cb51      0x6c8 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-refill.o)
- .debug_line    0x000000000001d219      0x468 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-sprintf.o)
- .debug_line    0x000000000001d681      0x4ef /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-stdio.o)
- .debug_line    0x000000000001db70      0x3b6 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-vasprintf.o)
- .debug_line    0x000000000001df26      0x52e /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wbuf.o)
- .debug_line    0x000000000001e454      0x555 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wsetup.o)
- .debug_line    0x000000000001e9a9      0x31e /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(isatty.o)
- .debug_line    0x000000000001ecc7      0x3de /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-flags.o)
- .debug_line    0x000000000001f0a5      0x69e /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fputwc.o)
- .debug_line    0x000000000001f743      0x50d /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-locale.o)
- .debug_line    0x000000000001fc50      0x411 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-mbtowc_r.o)
- .debug_line    0x0000000000020061      0x2a8 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-memchr.o)
- .debug_line    0x0000000000020309      0x494 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-putc.o)
- .debug_line    0x000000000002079d      0x46c /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wcrtomb.o)
- .debug_line    0x0000000000020c09      0x411 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wctomb_r.o)
- .debug_line    0x000000000002101a      0x256 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-ctype_.o)
- .debug_line    0x0000000000021270     0x3b9e /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_api.o)
- .debug_line    0x0000000000024e0e     0x181a /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_partition_manager.o)
- .debug_line    0x0000000000026628      0x879 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_partition.o)
- .debug_line    0x0000000000026ea1      0xfe4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_handle_simple.o)
- .debug_line    0x0000000000027e85      0x66d /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_partition_lookup.o)
- .debug_line    0x00000000000284f2     0x3b8a /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_storage.o)
- .debug_line    0x000000000002c07c     0x46fe /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_page.o)
- .debug_line    0x000000000003077a      0xf21 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_item_hash_list.o)
- .debug_line    0x000000000003169b     0x1ff0 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_pagemanager.o)
- .debug_line    0x000000000003368b      0x6e9 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_types.o)
- .debug_line    0x0000000000033d74      0xb0f /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/pthread/libpthread.a(pthread_local_storage.o)
- .debug_line    0x0000000000034883     0x2425 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/pthread/libpthread.a(pthread.o)
- .debug_line    0x0000000000036ca8      0xde1 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/spi_flash/libspi_flash.a(partition.o)
- .debug_line    0x0000000000037a89     0x1f3d /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/spi_flash/libspi_flash.a(spi_flash.o)
- .debug_line    0x00000000000399c6      0xb8c /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .debug_line    0x000000000003a552     0x2984 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/vfs/libvfs.a(vfs_uart.o)
- .debug_line    0x000000000003ced6     0x5a90 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/vfs/libvfs.a(vfs.o)
- .debug_line    0x0000000000042966      0xa38 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_handler.o)
- .debug_line    0x000000000004339e      0x261 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_opvnt.o)
- .debug_line    0x00000000000435ff      0x25f /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(del_opv.o)
- .debug_line    0x000000000004385e     0x1358 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_alloc.o)
- .debug_line    0x0000000000044bb6      0x390 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(del_op.o)
- .debug_line    0x0000000000044f46      0x451 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_exception.o)
- .debug_line    0x0000000000045397     0x1992 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_personality.o)
- .debug_line    0x0000000000046d29      0xd18 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_terminate.o)
- .debug_line    0x0000000000047a41      0x869 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_globals.o)
- .debug_line    0x00000000000482aa      0x800 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_catch.o)
- .debug_line    0x0000000000048aaa      0x63f /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(si_class_type_info.o)
- .debug_line    0x00000000000490e9      0x302 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_opnt.o)
- .debug_line    0x00000000000493eb      0x2d3 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(bad_alloc.o)
- .debug_line    0x00000000000496be      0x25f /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(del_ops.o)
- .debug_line    0x000000000004991d      0x3a6 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_term_handler.o)
- .debug_line    0x0000000000049cc3      0x878 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_throw.o)
- .debug_line    0x000000000004a53b      0x687 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(class_type_info.o)
- .debug_line    0x000000000004abc2      0x2d6 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_unex_handler.o)
- .debug_line    0x000000000004ae98      0x463 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_call.o)
- .debug_line    0x000000000004b2fb      0x33b /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(tinfo.o)
- .debug_line    0x000000000004b636      0x888 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(atomicity.o)
- .debug_line    0x000000000004bebe     0x1175 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(guard.o)
- .debug_line    0x000000000004d033     0x4e8f /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(uart.o)
- .debug_line    0x0000000000051ec2     0x3b4b /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(i2c.o)
- .debug_line    0x0000000000055a0d     0x22f8 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(gpio.o)
- .debug_line    0x0000000000057d05     0x164d /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(esp_sleep.o)
- .debug_line    0x0000000000059352      0xde4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(ets_printf.o)
- .debug_line    0x000000000005a136      0x6ab /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(backtrace.o)
- .debug_line    0x000000000005a7e1      0xe70 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(esp_timer.o)
- .debug_line    0x000000000005b651     0x236e /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(unwind-dw2.o)
- .debug_line    0x000000000005d9bf     0x1114 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(unwind-dw2-fde.o)
- .debug_line    0x000000000005ead3      0x775 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp_common/libesp_common.a(esp_err_to_name.o)
- .debug_line    0x000000000005f248     0x2fe2 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp_ringbuf/libesp_ringbuf.a(ringbuf.o)
- .debug_line    0x000000000006222a      0xedc /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/newlib/libnewlib.a(time.o)
- .debug_line    0x0000000000063106      0x27f /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-atexit.o)
- .debug_line    0x0000000000063385      0x299 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-sysgettod.o)
- .debug_line    0x000000000006361e      0x562 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-__atexit.o)
- .debug_line    0x0000000000063b80      0x597 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
- .debug_line    0x0000000000064117      0xad9 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/pthread/libpthread.a(pthread_cond_var.o)
- .debug_line    0x0000000000064bf0      0x270 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(_moddi3.o)
+ .debug_line    0x000000000001260c      0xf33 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/main/libmain.a(main.o)
+ .debug_line    0x000000000001353f      0x614 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/newlib/libnewlib.a(syscall.o)
+ .debug_line    0x0000000000013b53      0x94c /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/newlib/libnewlib.a(reent_init.o)
+ .debug_line    0x000000000001449f      0x45b /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/newlib/libnewlib.a(esp_malloc.o)
+ .debug_line    0x00000000000148fa      0x9bc /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/newlib/libnewlib.a(locks.o)
+ .debug_line    0x00000000000152b6      0x4e5 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-asprintf.o)
+ .debug_line    0x000000000001579b      0x2d5 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-assert.o)
+ .debug_line    0x0000000000015a70       0x79 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-environ.o)
+ .debug_line    0x0000000000015ae9      0x591 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fclose.o)
+ .debug_line    0x000000000001607a      0x90b /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fflush.o)
+ .debug_line    0x0000000000016985      0xbf2 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .debug_line    0x0000000000017577      0x4ed /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fopen.o)
+ .debug_line    0x0000000000017a64      0x347 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fprintf.o)
+ .debug_line    0x0000000000017dab      0x303 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fseek.o)
+ .debug_line    0x00000000000180ae      0xcf9 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fseeko.o)
+ .debug_line    0x0000000000018da7      0x4ed /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fwalk.o)
+ .debug_line    0x0000000000019294      0x171 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-impure.o)
+ .debug_line    0x0000000000019405      0x609 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-makebuf.o)
+ .debug_line    0x0000000000019a0e     0x10d0 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-nano-svfprintf.o)
+ .debug_line    0x000000000001aade      0xf21 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_line    0x000000000001b9ff      0xd7d /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_line    0x000000000001c77c      0x396 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-putchar.o)
+ .debug_line    0x000000000001cb12      0x6c8 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-refill.o)
+ .debug_line    0x000000000001d1da      0x468 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-sprintf.o)
+ .debug_line    0x000000000001d642      0x4ef /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-stdio.o)
+ .debug_line    0x000000000001db31      0x3b6 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-vasprintf.o)
+ .debug_line    0x000000000001dee7      0x52e /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wbuf.o)
+ .debug_line    0x000000000001e415      0x555 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wsetup.o)
+ .debug_line    0x000000000001e96a      0x31e /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(isatty.o)
+ .debug_line    0x000000000001ec88      0x3de /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-flags.o)
+ .debug_line    0x000000000001f066      0x69e /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-fputwc.o)
+ .debug_line    0x000000000001f704      0x50d /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-locale.o)
+ .debug_line    0x000000000001fc11      0x411 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-mbtowc_r.o)
+ .debug_line    0x0000000000020022      0x2a8 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-memchr.o)
+ .debug_line    0x00000000000202ca      0x494 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-putc.o)
+ .debug_line    0x000000000002075e      0x46c /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wcrtomb.o)
+ .debug_line    0x0000000000020bca      0x411 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-wctomb_r.o)
+ .debug_line    0x0000000000020fdb      0x256 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-ctype_.o)
+ .debug_line    0x0000000000021231     0x3b9e /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_api.o)
+ .debug_line    0x0000000000024dcf     0x181a /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_partition_manager.o)
+ .debug_line    0x00000000000265e9      0x879 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_partition.o)
+ .debug_line    0x0000000000026e62      0xfe4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_handle_simple.o)
+ .debug_line    0x0000000000027e46      0x66d /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_partition_lookup.o)
+ .debug_line    0x00000000000284b3     0x3b8a /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_storage.o)
+ .debug_line    0x000000000002c03d     0x46fe /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_page.o)
+ .debug_line    0x000000000003073b      0xf21 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_item_hash_list.o)
+ .debug_line    0x000000000003165c     0x1ff0 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_pagemanager.o)
+ .debug_line    0x000000000003364c      0x6e9 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/nvs_flash/libnvs_flash.a(nvs_types.o)
+ .debug_line    0x0000000000033d35      0xb0f /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/pthread/libpthread.a(pthread_local_storage.o)
+ .debug_line    0x0000000000034844     0x2425 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/pthread/libpthread.a(pthread.o)
+ .debug_line    0x0000000000036c69      0xde1 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/spi_flash/libspi_flash.a(partition.o)
+ .debug_line    0x0000000000037a4a     0x1f3d /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/spi_flash/libspi_flash.a(spi_flash.o)
+ .debug_line    0x0000000000039987      0xb8c /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .debug_line    0x000000000003a513     0x2984 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/vfs/libvfs.a(vfs_uart.o)
+ .debug_line    0x000000000003ce97     0x5a90 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/vfs/libvfs.a(vfs.o)
+ .debug_line    0x0000000000042927      0xa38 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_handler.o)
+ .debug_line    0x000000000004335f      0x261 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_opvnt.o)
+ .debug_line    0x00000000000435c0      0x25f /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(del_opv.o)
+ .debug_line    0x000000000004381f     0x1358 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_alloc.o)
+ .debug_line    0x0000000000044b77      0x390 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(del_op.o)
+ .debug_line    0x0000000000044f07      0x451 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_exception.o)
+ .debug_line    0x0000000000045358     0x1992 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_personality.o)
+ .debug_line    0x0000000000046cea      0xd18 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_terminate.o)
+ .debug_line    0x0000000000047a02      0x869 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_globals.o)
+ .debug_line    0x000000000004826b      0x800 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_catch.o)
+ .debug_line    0x0000000000048a6b      0x63f /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(si_class_type_info.o)
+ .debug_line    0x00000000000490aa      0x302 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(new_opnt.o)
+ .debug_line    0x00000000000493ac      0x2d3 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(bad_alloc.o)
+ .debug_line    0x000000000004967f      0x25f /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(del_ops.o)
+ .debug_line    0x00000000000498de      0x3a6 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_term_handler.o)
+ .debug_line    0x0000000000049c84      0x878 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_throw.o)
+ .debug_line    0x000000000004a4fc      0x687 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(class_type_info.o)
+ .debug_line    0x000000000004ab83      0x2d6 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_unex_handler.o)
+ .debug_line    0x000000000004ae59      0x463 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(eh_call.o)
+ .debug_line    0x000000000004b2bc      0x33b /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(tinfo.o)
+ .debug_line    0x000000000004b5f7      0x888 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(atomicity.o)
+ .debug_line    0x000000000004be7f     0x1175 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libstdc++.a(guard.o)
+ .debug_line    0x000000000004cff4     0x4e8f /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(uart.o)
+ .debug_line    0x0000000000051e83     0x3b4b /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(i2c.o)
+ .debug_line    0x00000000000559ce     0x22f8 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(gpio.o)
+ .debug_line    0x0000000000057cc6     0x164d /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(esp_sleep.o)
+ .debug_line    0x0000000000059313      0xde4 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(ets_printf.o)
+ .debug_line    0x000000000005a0f7      0x6ab /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(backtrace.o)
+ .debug_line    0x000000000005a7a2      0xe70 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp8266/libesp8266.a(esp_timer.o)
+ .debug_line    0x000000000005b612     0x236e /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(unwind-dw2.o)
+ .debug_line    0x000000000005d980     0x1114 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(unwind-dw2-fde.o)
+ .debug_line    0x000000000005ea94      0x775 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp_common/libesp_common.a(esp_err_to_name.o)
+ .debug_line    0x000000000005f209     0x2fe2 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/esp_ringbuf/libesp_ringbuf.a(ringbuf.o)
+ .debug_line    0x00000000000621eb      0xedc /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/newlib/libnewlib.a(time.o)
+ .debug_line    0x00000000000630c7      0x27f /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-atexit.o)
+ .debug_line    0x0000000000063346      0x299 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-sysgettod.o)
+ .debug_line    0x00000000000635df      0x562 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-__atexit.o)
+ .debug_line    0x0000000000063b41      0x597 /home/adrian/esp/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
+ .debug_line    0x00000000000640d8      0xad9 /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/pthread/libpthread.a(pthread_cond_var.o)
+ .debug_line    0x0000000000064bb1      0x270 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libgcc.a(_moddi3.o)
 
 .debug_str      0x0000000000000000    0x1f0f8
  .debug_str     0x0000000000000000      0x55d /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/app_update/libapp_update.a(esp_app_desc.o)

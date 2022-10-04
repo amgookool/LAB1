@@ -1,5 +1,5 @@
 main.o: /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/main/main.c \
- /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/main/include/main.h \
+ /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/main/main.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/build/include/sdkconfig.h \
@@ -43,7 +43,7 @@ main.o: /home/adrian/esp/3006-workspace/Projects/LAB1/i2c/main/main.c \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/gpio_register.h
 
-/home/adrian/esp/3006-workspace/Projects/LAB1/i2c/main/include/main.h:
+/home/adrian/esp/3006-workspace/Projects/LAB1/i2c/main/main.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 

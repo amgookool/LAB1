@@ -15,7 +15,7 @@ static esp_err_t i2c_master_init()
     conf.sda_pullup_en = 1;
     conf.scl_io_num = I2C_MASTER_SCL_IO;
     conf.scl_pullup_en = 1;
-    conf.clk_stretch_tick = 500; // !!!500 ticks, Clock stretch is about 300us, you can make changes according to the actual situation.
+    conf.clk_stretch_tick = 300; // 300 ticks, Clock stretch is about 300us
     ESP_ERROR_CHECK(i2c_driver_install(i2c_master_port, conf.mode));
     ESP_ERROR_CHECK(i2c_param_config(i2c_master_port, &conf));
     return ESP_OK;
@@ -23,9 +23,9 @@ static esp_err_t i2c_master_init()
 
 /**
  * @brief Function to initialize ESP in I2C mode and write the bits in the Configuration register on the ADS1115
- * 
- * @param i2c_num 
- * @return esp_err_t 
+ *
+ * @param i2c_num
+ * @return esp_err_t
  */
 static esp_err_t i2c_master_ads1115_init(i2c_port_t i2c_num)
 {
@@ -34,32 +34,30 @@ static esp_err_t i2c_master_ads1115_init(i2c_port_t i2c_num)
     ESP_LOGI(TAG, "Starting ESP Master Initialization for ADS1115\n");
 
     ADS1115_CONFIG_FIELDS config_fields;
-    // MSB - 0b 0 100 001 0
-    // LSB - 0b 100 0 0 0 10
-    config_fields.OS = 0x00;
-    config_fields.MUX = 0x04;
-    config_fields.PGA = 0x01;
-    config_fields.MODE = 0x00;
-    config_fields.DR = 0x04;
-    config_fields.COMP_MODE = 0x00;
-    config_fields.COMP_POL = 0x00;
-    config_fields.COMP_LAT = 0x00;
-    config_fields.COMP_QUE = 0x02;
+    config_fields.OS = 0x00;        // No effect
+    config_fields.MUX = 0x04;       // AINp = A0 & AINn = GND
+    config_fields.PGA = 0x01;       // Gain - 4.096 V
+    config_fields.MODE = 0x00;      // Continuous-conversion mode
+    config_fields.DR = 0x04;        // 128 SPS
+    config_fields.COMP_MODE = 0x00; // Traditional comparator
+    config_fields.COMP_POL = 0x00;  // Active low
+    config_fields.COMP_LAT = 0x00;  // Nonlatching comparator. Alert pin doesn't latch when asserted
+    config_fields.COMP_QUE = 0x02;  // Assert after 4 cconversions
 
     get_16bit_config(&config_fields);
 
     ESP_LOGI(TAG, "Config Field: %d\n", (int)config_fields.configuration);
+
     // writing to config register
-    // uint16_t conf_data = 0b0100001010000010;
     ESP_ERROR_CHECK(ads1115_write_data(i2c_num, ADS1115_CONFIG_REG, config_fields.configuration));
     return ESP_OK;
 }
 
 /**
  * @brief Task Funnction for xTaskCreate FreeRTOS function
- * 
+ *
  * Initialize the ESP in I2C mode and starts process to continously read the ADS1115
- * @param config_params ->  NULL 
+ * @param config_params ->  NULL
  */
 static void i2c_ads1115_task(void *config_params)
 {
@@ -100,19 +98,6 @@ void app_main(void)
     xTaskCreate(i2c_ads1115_task, "i2c_ads1115_task", 2048, NULL, 5, NULL);
 }
 
-/**
- * @brief Function to create 16-bit data for configuration register
- *
- * Bit Order from MSB to LSB
-
- * Operational Status(1-bit) -> Multiplexer(3-bits) -> Prog. Gain Amp(3-bits) -> MODE(1-bit) -> DataRate(3-bits) -> Comparator Mode (1-bit)
- * --> Comparator Polarity (1-bit) -> Comparator Latch (1-bit) -> Comparator Queue(2-bit)  
-
- * @param config - refers to the ADS1115_CONFIG_FIELDS data type
- *
- * @return
- *     - NULL
- */
 static void get_16bit_config(ADS1115_CONFIG_FIELDS *config)
 {
     uint16_t data;
@@ -128,26 +113,6 @@ static void get_16bit_config(ADS1115_CONFIG_FIELDS *config)
     config->configuration = data;
 }
 
-/**
- * @brief Function to write by byte(8-bits) to the ADS1115
- *
- * 1. send data
- * __________________________________________________________________________-_______________
- * | start | slave_addr + wr_bit + ack | write reg_address + ack | write data + ack  | stop |
- * --------|---------------------------|-------------------------|-------------------|------|
- *
- * @param i2c_num I2C port number
- * @param reg_addr slave specific register address
- * @param data data to send
- * @param data_len data length
- *
- * @return
- *     - ESP_OK Success
- *     - ESP_ERR_INVALID_ARG Parameter error
- *     - ESP_FAIL Sending command error, slave doesn't ACK the transfer.
- *     - ESP_ERR_INVALID_STATE I2C driver not installed or not in master mode.
- *     - ESP_ERR_TIMEOUT Operation timeout because the bus is busy.
- */
 static esp_err_t ads1115_write_bytes(i2c_port_t i2c_num, uint8_t reg_addr, uint8_t *data, uint16_t data_len)
 {
     esp_err_t ret;
@@ -162,23 +127,6 @@ static esp_err_t ads1115_write_bytes(i2c_port_t i2c_num, uint8_t reg_addr, uint8
     return ret;
 }
 
-/**
- * @brief Function to write to 16-bit register (Configuration) on the ADS1115
- * 
- * 1. Right Shift 8-bits of 0th index on the write array buffer and AND operation with 0b11111111 to set the LSB
- * 2. Right Shift 0-bits of the 1st index on the write array buffer and AND operation with 0b11111111 to set the MSB
- *
- * @param i2c_num I2C port number
- * @param reg_addr slave specific register address
- * @param data data to send
- *
- * @return
- *     - ESP_OK Success
- *     - ESP_ERR_INVALID_ARG Parameter error
- *     - ESP_FAIL Sending command error, slave doesn't ACK the transfer.
- *     - ESP_ERR_INVALID_STATE I2C driver not installed or not in master mode.
- *     - ESP_ERR_TIMEOUT Operation timeout because the bus is busy.
- */
 static esp_err_t ads1115_write_data(i2c_port_t i2c_num, uint8_t reg_addr, uint16_t data)
 {
     esp_err_t ret;
@@ -192,31 +140,6 @@ static esp_err_t ads1115_write_data(i2c_port_t i2c_num, uint8_t reg_addr, uint16
     return ret;
 }
 
-/**
- * @brief Function to read by byte from ADS1115
- *
- * 1. send reg address (conversion register)
- * ______________________________________________________________________
- * | start | slave_addr + wr_bit + ack | write reg_address + ack | stop |
- * --------|---------------------------|-------------------------|------|
- *
- * 2. read data
- * ___________________________________________________________________________________
- * | start | slave_addr + rd_bit + ack | read data_len byte + ack(last nack)  | stop |
- * --------|---------------------------|--------------------------------------|------|
- *
- * @param i2c_num I2C port number
- * @param reg_addr slave register address
- * @param data data to read
- * @param data_len data length
- *
- * @return
- *     - ESP_OK Success
- *     - ESP_ERR_INVALID_ARG Parameter error
- *     - ESP_FAIL Sending command error, slave doesn't ACK the transfer.
- *     - ESP_ERR_INVALID_STATE I2C driver not installed or not in master mode.
- *     - ESP_ERR_TIMEOUT Operation timeout because the bus is busy.
- */
 static esp_err_t ads1115_read_bytes(i2c_port_t i2c_num, uint8_t reg_addr, uint8_t *data, uint16_t data_len)
 {
     esp_err_t ret;
@@ -247,22 +170,6 @@ static esp_err_t ads1115_read_bytes(i2c_port_t i2c_num, uint8_t reg_addr, uint8_
     return ret;
 }
 
-/**
- * @brief Function to read from 16-bit register (Conversion) on the ADS1115
- * 
- * 1. Left shift 8 bits of the 0th index of the read_data array to get the MSB and OR the 1st index of the array to get the LSB 
- *
- * @param i2c_num I2C port number
- * @param reg_addr slave specific register address
- * @param data data to send
- *
- * @return
- *     - ESP_OK Success
- *     - ESP_ERR_INVALID_ARG Parameter error
- *     - ESP_FAIL Sending command error, slave doesn't ACK the transfer.
- *     - ESP_ERR_INVALID_STATE I2C driver not installed or not in master mode.
- *     - ESP_ERR_TIMEOUT Operation timeout because the bus is busy.
- */
 static esp_err_t ads1115_read_data(i2c_port_t i2c_num, uint8_t reg_addr, uint16_t *data)
 {
     esp_err_t ret;

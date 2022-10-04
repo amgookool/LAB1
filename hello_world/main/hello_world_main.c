@@ -6,6 +6,7 @@
 
 void app_main()
 {
+    // Replaced Hello world message with name and ID number
     printf("Name: Adrian Gookool\nID Number: 816008385\n");
 
     /* Print chip information */

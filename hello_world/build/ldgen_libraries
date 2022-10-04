@@ -1,43 +1,37 @@
-/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/app_update/libapp_update.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/bootloader_support/libbootloader_support.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/coap/libcoap.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/console/libconsole.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-tls/libesp-tls.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-wolfssl/libesp-wolfssl.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp8266/libesp8266.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp_common/libesp_common.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp_event/libesp_event.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp_gdbstub/libesp_gdbstub.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp_http_client/libesp_http_client.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp_http_server/libesp_http_server.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp_https_ota/libesp_https_ota.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp_ringbuf/libesp_ringbuf.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/fatfs/libfatfs.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/freemodbus/libfreemodbus.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/freertos/libfreertos.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/heap/libheap.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/http_parser/libhttp_parser.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/jsmn/libjsmn.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/json/libjson.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/libsodium/liblibsodium.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/log/liblog.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/lwip/liblwip.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/main/libmain.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/mbedtls/libmbedtls.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/mdns/libmdns.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/mqtt/libmqtt.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/newlib/libnewlib.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/nvs_flash/libnvs_flash.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/openssl/libopenssl.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/protobuf-c/libprotobuf-c.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/protocomm/libprotocomm.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/pthread/libpthread.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/spi_flash/libspi_flash.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/spi_ram/libspi_ram.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/spiffs/libspiffs.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/tcp_transport/libtcp_transport.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/tcpip_adapter/libtcpip_adapter.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/vfs/libvfs.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/wear_levelling/libwear_levelling.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/wifi_provisioning/libwifi_provisioning.a
- /home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/wpa_supplicant/libwpa_supplicant.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/tcpip_adapter/libtcpip_adapter.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/esp_common/libesp_common.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/esp_event/libesp_event.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/wpa_supplicant/libwpa_supplicant.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/bootloader_support/libbootloader_support.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/nvs_flash/libnvs_flash.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/esp8266/libesp8266.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/vfs/libvfs.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/lwip/liblwip.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/log/liblog.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/heap/libheap.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/freertos/libfreertos.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/newlib/libnewlib.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/spi_flash/libspi_flash.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/app_update/libapp_update.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/console/libconsole.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/http_parser/libhttp_parser.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/esp-tls/libesp-tls.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/esp_gdbstub/libesp_gdbstub.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/tcp_transport/libtcp_transport.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/esp_http_client/libesp_http_client.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/esp_http_server/libesp_http_server.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/esp_https_ota/libesp_https_ota.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/wear_levelling/libwear_levelling.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/fatfs/libfatfs.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/freemodbus/libfreemodbus.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/jsmn/libjsmn.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/json/libjson.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/libsodium/liblibsodium.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/mqtt/libmqtt.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/openssl/libopenssl.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/protobuf-c/libprotobuf-c.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/pthread/libpthread.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/spi_ram/libspi_ram.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/spiffs/libspiffs.a
+/home/adrian/esp/3006-workspace/Projects/LAB1/hello_world/build/esp-idf/main/libmain.a

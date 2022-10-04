@@ -6,7 +6,7 @@
     "config_defaults":    "",
     "app_elf":            "gpio.elf",
     "app_bin":            "gpio.bin",
-    "git_revision":       "v3.4-71-g7085cc76",
+    "git_revision":       "v3.4-71-g7085cc76-dirty",
     "phy_data_partition": "",
     "monitor_baud" : "74880",
     "config_environment" : {

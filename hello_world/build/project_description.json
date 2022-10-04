@@ -6,7 +6,7 @@
     "config_defaults":    "",
     "app_elf":            "hello-world.elf",
     "app_bin":            "hello-world.bin",
-    "git_revision":       "v3.4-71-g7085cc76",
+    "git_revision":       "v3.4-71-g7085cc76-dirty",
     "phy_data_partition": "",
     "monitor_baud" : "74880",
     "config_environment" : {
