@@ -21,6 +21,7 @@ static esp_err_t i2c_master_init()
     return ESP_OK;
 }
 
+
 /**
  * @brief Function to initialize ESP in I2C mode and write the bits in the Configuration register on the ADS1115
  *
@@ -82,6 +83,8 @@ static void i2c_ads1115_task(void *config_params)
         {
             ESP_LOGI(TAG, "Successfully read ADS1115...\n");
             ESP_LOGI(TAG, "Sensor Data: %d\n", (int)sensor_data);
+            double voltage = (double) sensor_data * 1.25e-4;
+            ESP_LOGI(TAG,"Voltage: %d.%d V\n",(uint16_t)voltage, (uint16_t)(voltage * 100) % 100);
             vTaskDelay(3000 / portTICK_PERIOD_MS);
         }
         else
