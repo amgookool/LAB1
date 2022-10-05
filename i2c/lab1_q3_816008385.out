@@ -8,10 +8,10 @@ tail 0
 chksum 0x10
 load 0x3ffe8420, len 3472, room 8
 tail 8
-chksum 0x2e
-csum 0x2e
+chksum 0x23
+csum 0x23
 I (43) boot: ESP-IDF v3.4-71-g7085cc76-dirty 2nd stage bootloader
-I (43) boot: compile time 16:05:49
+I (43) boot: compile time 23:10:57
 I (44) boot: SPI Speed      : 40MHz
 I (50) boot: SPI Mode       : DIO
 I (57) boot: SPI Flash Size : 1MB
@@ -21,59 +21,64 @@ I (79) boot:  0 nvs              WiFi data        01 02 00009000 00006000
 I (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000
 I (102) boot:  2 factory          factory app      00 00 00010000 000f0000
 I (114) boot: End of partition table
-I (121) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x17298 ( 94872) map
-I (174) esp_image: segment 1: paddr=0x000272b0 vaddr=0x402272a8 size=0x05dd0 ( 24016) map
-I (184) esp_image: segment 2: paddr=0x0002d088 vaddr=0x3ffe8000 size=0x003dc (   988) load
-I (185) esp_image: segment 3: paddr=0x0002d46c vaddr=0x40100000 size=0x00080 (   128) load
-I (199) esp_image: segment 4: paddr=0x0002d4f4 vaddr=0x40100080 size=0x04558 ( 17752) load
+I (121) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x17308 ( 94984) map
+I (174) esp_image: segment 1: paddr=0x00027320 vaddr=0x40227318 size=0x05de4 ( 24036) map
+I (184) esp_image: segment 2: paddr=0x0002d10c vaddr=0x3ffe8000 size=0x003dc (   988) load
+I (185) esp_image: segment 3: paddr=0x0002d4f0 vaddr=0x40100000 size=0x00080 (   128) load
+I (199) esp_image: segment 4: paddr=0x0002d578 vaddr=0x40100080 size=0x04558 ( 17752) load
 I (219) boot: Loaded app from partition at offset 0x10000
-I (434) gpio: GPIO[0]| InputEn: 0| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0
-I (437) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0
-I (448) main: Starting ESP Master Initialization for ADS1115
+I (435) gpio: GPIO[0]| InputEn: 0| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0
+I (438) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0
+I (449) main: Starting ESP Master Initialization for ADS1115
 
-I (458) main: Config Field: 17026
+I (459) main: Config Field: 17026
 
 I (1464) main: Succussfully Initialized ADS1115 and I2C Protocol
 
-I (1466) main: Byte:0: 117
-I (1467) main: Byte:1: 124
+I (1467) main: Byte:0: 93
+I (1468) main: Byte:1: 81
 I (1469) main: Successfully read ADS1115...
 
-I (1476) main: Sensor Data: 30076
+I (1477) main: Sensor Data: 23889
 
-I (6474) main: Byte:0: 117
-I (6475) main: Byte:1: 155
-I (6476) main: Successfully read ADS1115...
+I (1483) main: Voltage: 2.98 V
 
-I (6477) main: Sensor Data: 30107
+I (6484) main: Byte:0: 93
+I (6486) main: Byte:1: 82
+I (6487) main: Successfully read ADS1115...
 
-I (11475) main: Byte:0: 81
-I (11476) main: Byte:1: 1
-I (11477) main: Successfully read ADS1115...
+I (6488) main: Sensor Data: 23890
 
-I (11478) main: Sensor Data: 20737
+I (6493) main: Voltage: 2.98 V
 
-I (16475) main: Byte:0: 61
-I (16476) main: Byte:1: 175
-I (16477) main: Successfully read ADS1115...
+I (11495) main: Byte:0: 68
+I (11497) main: Byte:1: 60
+I (11498) main: Successfully read ADS1115...
 
-I (16478) main: Sensor Data: 15791
+I (11499) main: Sensor Data: 17468
 
-I (21476) main: Byte:0: 255
-I (21477) main: Byte:1: 208
-I (21478) main: Successfully read ADS1115...
+I (11504) main: Voltage: 2.18 V
 
-I (21479) main: Sensor Data: 65488
+I (16505) main: Byte:0: 68
+I (16507) main: Byte:1: 18
+I (16508) main: Successfully read ADS1115...
 
-I (26476) main: Byte:0: 25
-I (26477) main: Byte:1: 60
-I (26478) main: Successfully read ADS1115...
+I (16509) main: Sensor Data: 17426
 
-I (26479) main: Sensor Data: 6460
+I (16514) main: Voltage: 2.17 V
 
-I (31477) main: Byte:0: 39
-I (31478) main: Byte:1: 234
-I (31479) main: Successfully read ADS1115...
+I (21516) main: Byte:0: 50
+I (21518) main: Byte:1: 7
+I (21519) main: Successfully read ADS1115...
 
-I (31480) main: Sensor Data: 10218
+I (21520) main: Sensor Data: 12807
 
+I (21525) main: Voltage: 1.60 V
+
+I (26526) main: Byte:0: 50
+I (26528) main: Byte:1: 12
+I (26529) main: Successfully read ADS1115...
+
+I (26530) main: Sensor Data: 12812
+
+I (26535) main: Voltage: 1.60 V
